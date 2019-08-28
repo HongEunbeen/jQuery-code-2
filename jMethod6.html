@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--시험 출제-->
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            var city = ["서울", "대구", "대전", "부산"];
+            $.each(city,function (index, value) { //배열명
+                $("#m1").append(index + " : " + value + "<br>");
+            });
+
+            var subjectinfo = {
+                subject : "html",
+                grade : 1,
+                days : 20
+            };
+            $.each(subjectinfo, function(key, value){ // 객체명
+                $("#m2").append(key + " : " + value + "<br>");
+            });
+        });
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id = "m1"></div>
+    <div id = "m2"></div>
+</body>
+</html>

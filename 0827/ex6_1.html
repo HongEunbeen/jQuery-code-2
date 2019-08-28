@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#m1").css("background-color","black");
+            $("#m1").css("color","white");
+            $("#m1").css("font-size","20px");
+            $("#m1").css("text-align","left");
+            $("#m2").css("color", function(){
+                return "purple";
+            });
+            $("#m2").css("background", function(){
+                return "lightgray";
+            });
+            $("#m2").css("font-size", function(){
+                return "30px";
+            });
+            $("#m3").css({
+                "color" : "green",
+                "border" : "1px solid blue",
+                "text-align" : "center"
+            });
+
+            $("#m4").css({
+                color : function(){
+                    return "red";
+                },
+                background : function(){
+                    return "black";
+                },
+                border : function(){
+                    return "1px solid green";
+                }
+               
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="m1">jQuery</div>
+    <div id="m2">javascript</div>
+    <div id="m3">jQuery Moblie</h5>
+        <!-- 위 세개만 알아두기-->
+    <div id="m4">responsive Web</div><!--수행에 안 나옴-->
+</body>
+</html>
+<!--함수를 사용하는게 좋음-->
+<!--메소드 방식은 익명 방식을 사용-->

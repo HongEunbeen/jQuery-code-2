@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <style type = "text/css">
+        div{
+            color:red;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bolder;
+            width: 300px;
+        }
+    </style>
+    <script type = "text/javascript">
+         $(document).ready(function(){
+            $(document.body).click(function(){ 
+                $("div").each(function(index){
+                 if(this.style.color != "blue"){
+                    this.style.color = "blue";
+                }else {
+                    this.style.color = "";
+                }
+                   
+                });
+            });
+         });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+   <div>Click here</div>
+   <div>to iterate through</div>
+   <div>these divs</div>
+</body>
+</html>

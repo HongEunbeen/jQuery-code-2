@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 라이브러리 연결</title>
+  <script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+  <style>
+  </style>
+  <script>
+      $(document).ready(function(){
+          $('.m1').css('background', 'black')
+          $('.m1').css('color', 'white')
+          $('.m2').css('color', 'gray')
+          $('p').css('border', '2px solid purple')
+          $('p').css('text-align', 'right')
+          $('p').css('font-style', 'italic')
+      });
+  </script>
+</head>
+<body>
+<div class="m1">
+	jQuery
+</div>
+<div class="m2">
+	javascript
+</div>
+<p>jQuery mobile</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type = "text/javascript">
+         $(document).ready(function(){
+            $("li").each(function(index, value){
+                $(".m1").append(index + " : " +$(this).text()+ "<br>");
+            });
+         });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>foo</li><p>
+        <li>bar</li>
+    </ul>
+    <p>
+    <div class = "m1"></div>
+</body>
+</html>

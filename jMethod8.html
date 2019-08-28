@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            var city = ["서울", "대구", "대전", "부산"];
+            var newCity = $.map(city,function (value, index) { 
+                if(index < 2){
+                    return value;//return은 map만 적용되고 each는 적용되지 않는다. -> 차이점(each와 map은 같은 기능을 한다)
+                }
+            });
+            console.log(newCity.toString());
+        });
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>

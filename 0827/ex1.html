@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 라이브러리 연결</title>
+  <script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+  <style>
+  li{
+  	margin: 10px;
+  }
+  </style>
+  <script>
+      $(document).ready(function() {
+          $('.list_1').css("border", "2px solid red");
+          $('.list_2').css("border", "1px solid orange");
+          $('.list_bg1').css("background", "yellow");
+          $('.list_4').css("border", "2px solid purple");
+          $('.list_bg2').css("background", "purple");
+          $('.btn').click(function(){
+        	  $('.list_bg2').css("background", "gray");
+          });
+      });
+  </script>
+</head>
+<body>
+<ul>
+  <li class="list_1">내용_1</li>
+  <li class="list_2">내용_2</li>
+  <li class="list_2">내용_3</li>
+  <li class="list_bg1">내용_1</li>
+  <li class="list_4">내용_2</li>
+  <li class="list_bg2">내용_3</li>
+</ul>
+  <button class="btn">클릭</button>
+
+</body>
+</html>
+
+<!--
+text() - 내용 변경
+html()
+ -> 두개는 getter setter로 진행된다. - 내용을 뿌림
+ setter -> $().text()
+ setter -> $().html()
+css() -> 해당 속성을 리턴
+ setter -> $().css() -3가지 방법 1.문자열 2.객체를 넣음(css스타일로 세팅) 3.익명 함수(한개), 객체 함수(여러개)
+
+-->

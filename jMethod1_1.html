@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+           $('div').text(function(index, text){
+               if(index == 0){
+                    return "responsive web";
+               }
+                else{
+                    return "div요소의 텍스트는 " + text +", index는" + (index-1);
+                }
+           });
+        });
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div>jQuery</div>
+    <div>html</div>
+    <div>css</div>
+    <div>javascript</div>
+</body>
+</html>

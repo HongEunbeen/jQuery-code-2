@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 라이브러리 연결</title>
+  <script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+  <style>
+  img{
+  	width: 50px;
+  	height: 50px;
+  }
+  </style>
+  <script>
+      $(document).ready(function() {/*
+          $('.img1').css("width", "50px");
+          $('.img1').css("height", "50px");
+          $('.img2').css("width", "50px");
+          $('.img2').css("height", "50px");
+          $('.img1').click(function(){
+              $('.img1').css("width", "+=100px");
+              $('.img1').css("height", "+=100px");
+          })
+          $('.btn2').click(function(){
+              $('.img2').css("width", "+=100px");
+              $('.img2').css("height", "+=100px");
+          })*/
+          var w;
+          var h;
+          $('.m1 img').click(function(){
+        	  w = $('.m1 img').width();
+        	  h = $('.m1 img').height();
+              $('.m1 img').width(w+100);
+              $('.m1 img').height(h+100);
+          })
+          $('.m2 img').click(function(){
+        	  w = $('.m2 img').width();
+        	  h = $('.m2 img').height();
+              $('.m2 img').width(w+100);
+              $('.m2 img').height(h+100);
+          })
+          
+      });
+  </script>
+</head>
+<body>
+<div class="m1">
+	<img class="img1" src="img/r1.png">
+	<button class="btn1">클릭</button>
+</div>
+<div class="m2">
+	<img class="img2" src="img/r2.png">
+	<button class="btn2">클릭</button>	
+</div>
+
+</body>
+</html>

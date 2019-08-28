@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function() {
+          $("h2").html("<img src = 'img//r1.png'>");//setter 방식
+          var a = $("h2").html();//getter(시험에 나옴)
+          alert(a);
+          //setter로 하면 h2두개 모두 이미지가 들어가는데 getter를 하게 되면 h2의 첫번째 요소만 리턴되어 alert에 한번만 나온다.
+        });
+    </script>
+</head>
+<body>
+   <h2></h2>
+   <h2></h2>
+</body>
+</html>
