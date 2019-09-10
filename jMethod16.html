@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <style type = "text/css">
+
+    </style>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#naver").attr({
+                    "href" : "https://www.daum.net"
+                })
+                $("#naver").html("duam.net");
+                $("#tutorialspoint").attr("href", function(i, originValue){
+                    return originValue + '/jsp';
+                });
+                $("#google").attr("href", "https://www.kbstar.com");
+                $("#google").html("국민은행");
+            }); 
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <a id="naver" href="https://www.naver.com">naver.com</a><br>
+    <a id="tutorialspoint" href ="https://www.tutorialspoint.com">tutorialspoint.com</a><br>
+    <a id="google" href="https://www.google.com">google.com</a><br>
+    <button>href와 title변경</button>
+</body>
+</html>
+<!--
+.attr()는 HTML의 속성을 취급
+.prop()는 JavaScript 프로파티을 취급(DOM 객체 자체를 반환)
+attr과 prop의 차이는 html 태그의 속성을 컨트롤하는 메소드이냐 javascript의 속성을 컨트롤하는 메소드이냐이다.
+ex) check checked = "true" 일 경우 attr는 checked를 반환 prop는 수동적으ㅗㄹ false, true 반환
+-->
+
+<!--중간고사는 쉽게 나온다. ppt에서 많이 벗아나지 않음 -->

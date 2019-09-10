@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <style type = "text/css">
+        .first{color : red;}
+        .second{color:pink;}
+        .third{color:orange;}
+    </style>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $("h1").css("color","red");
+            $("h1").css("font-size","10px");
+            $("h2").css("color",function(index){
+                return "yellow";
+            });
+            $("h2").css("font-size",function(index){
+                return "20px";
+            });
+            $("h3").css({
+                "color" : "blue",
+                "background" : "white"
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+   <h1>h1</h1>
+   <h1>h1</h1>
+   <h2>h2</h2>
+   <h2>h2</h2>
+   <h3>h3</h3>
+   <h3>h3</h3>
+</body>
+</html>
+<!--dom운 api 이다.
+dom은 넓은 의미로 웹 브라우저가 html 페이지를 인식하는 방식을 의미
+      조금 좁은 의미로는 document 객체와 관련된 객체의 집합-->
