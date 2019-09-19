@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $(".over").mouseover(function(){
+                $(".over_text").append("mouseover");
+            });
+            $(".enter").mouseenter(function(){
+                $(".enter_text").append("mouseenter");
+            });
+        });
+    </script>
+    <style type = "text/css">
+        .outter{
+            padding:40px;
+            margin-bottom:40px;
+            background : #ccc;
+        }
+        .inner{
+            padding:20px;
+            background:#999;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class ="over outter">
+        <div class ="inner">mouseover</div>
+    </div>
+    <div class = "over_text"></div>
+    <div class ="enter outter">
+        <div class ="inner">mouseenter</div>
+    </div>
+    <div class = "enter_text"></div>
+</body>
+</html>
