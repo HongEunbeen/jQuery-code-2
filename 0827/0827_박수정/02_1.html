@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div {
+	margin: 20px;
+	padding:20px;
+}
+
+</style>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(".img1").css("border","2px solid black");
+	$(".img2").css("border","2px solid black");
+	$("img").css("width","100");
+	$("img").css("height","100");
+
+ 	var w;
+ 	var h;
+ 	
+ 	$("button").click(function() {
+ 		w = $(".m1 img").width();
+ 		h = $(".m1 img").height();
+ 		$(".m1 img").width(w+100);
+ 		$(".m1 img").height(h+100);
+ 	
+ 		w = $(".m2 img").width();
+ 		h = $(".m2 img").height();
+ 		$(".m2 img").width(w+100);
+ 		$(".m2 img").height(h+100);
+ 	});
+	
+});
+</script>
+</head>
+<body>
+<div class="m1">
+<img src="img/r1.png">
+<button>클릭</button>
+</div>
+
+<div class="m2">
+<img src="img/r2.png">
+<button>클릭</button>
+</div>
+
+</body>
+</html>

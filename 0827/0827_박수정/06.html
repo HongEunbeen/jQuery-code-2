@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(".m1").css("background","yellow");
+	$(".m2").css({
+		"color":"green",
+		"background":"black"
+	});
+	$("p").css({
+		"border": function() {
+			return "2px solid blue";
+		},
+		"text-align": function() {
+			return "center";
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div class="m1">jQuery</div>
+<div class="m2">javascript</div>
+
+<p><strong>jQuery mobile</strong></p>
+</body>
+</html>

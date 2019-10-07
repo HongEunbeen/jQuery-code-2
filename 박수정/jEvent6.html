@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <style>
+        .bg {
+            background: lightgray;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        .inner {
+            background: gray;
+            padding: 20px;
+        }
+        
+    </style>
+    <script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+        $(function() {
+            $('.wrap1').mouseover(function() {
+            	$('#display1').append("<strong>마우스오버</strong>");
+            });
+            
+            $('.wrap2').mouseenter(function() {
+            	$('#display2').append("<em>마우스들어감</em>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap1 bg">
+        <div class="inner">mouseover</div>
+    </div>
+    <div id="display1"></div>
+    <div class="wrap2 bg">
+        <div class="inner">mouseenter</div>
+    </div>
+    <div id="display2"></div>
+</body>
+</html>

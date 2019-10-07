@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	
+	//$('h1').first().remove();
+	// remove()는 해당 셀렉터 자체를 제거한다.
+	
+	$('div').empty();
+	// empty()는 해당 셀렉터 내용과 하위 태그 모두 지음(나 밑에있는 후손들만 지움 - 해당 셀렉터 자체는 지워지지 않음(div는 남아있다))
+	
+	//$() => 태그 생성됨 
+	//$(<body></body>);
+	
+});
+</script>
+</head>
+<body>
+
+<div>
+
+	<h1>Header-1</h1>
+	<h1>Header-2</h1>
+	<h1>Header-3</h1>
+	<h1>Header-4</h1>
+</div>
+
+</body>
+</html>

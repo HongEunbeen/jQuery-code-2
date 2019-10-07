@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("h2").text("<img src='img/r1.png'>");
+	var a = $('h2').text();
+	alert(a);
+	//text getter는 모든 요소 리턴, 단순 텍스트 요소만을 리턴
+	//html getter는 첫번째 요소만 리턴, 텍스트를 포함한 태그까지도 리턴
+});
+</script>
+</head>
+<body>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+</body>
+</html>

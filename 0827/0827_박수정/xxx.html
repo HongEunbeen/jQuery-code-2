@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+        
+    </style>
+    <script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+   <p><a href="#none" class="link">버튼</a></p>
+   <script>
+        var $goLink = $('.link'); 
+        console.log($goLink.attr('href')); // #none 출력 
+        console.log($goLink.prop('href')); 
+        // http://localhost:63342/Project/srcFactory/study/test.html#none
+
+    </script>
+    <h2 class="h2"></h2>
+   <script>
+        var $goLink = $('.h2'); 
+        console.log($goLink.attr('class')); // #none 출력 
+        console.log($goLink.prop('class')); 
+        // http://localhost:63342/Project/srcFactory/study/test.html#none
+
+    </script>
+    <div class="div" style="background-color: black;">div</div>
+   <script>
+        var $goLink = $('.div'); 
+        console.log($goLink.attr('style')); // #none 출력 
+        console.log($goLink.prop('style')); 
+        // http://localhost:63342/Project/srcFactory/study/test.html#none
+
+    </script>
+</body>
+</html>

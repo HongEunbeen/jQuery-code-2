@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	
+	$('h1').css('color','red');
+	$('h1').css('font-size', '10px');
+	
+	$('h2').css('color', function() {
+		return 'yellow';
+	});
+	$('h2').css('font-size', function() {
+		return '20px';
+	});
+	
+	$('h3').css({
+		color: 'blue',
+		background: 'white'
+	});
+	
+});
+</script>
+</head>
+<body>
+
+<h1>h1</h1>
+<h1>h1</h1>
+<h2>h2</h2>
+<h2>h2</h2>
+<h3>h3</h3>
+<h3>h3</h3>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(".m2").text(function(index, t) {
+		return "div 요소의 텍스트는 " + t + ", index는 " + index;
+	});
+	$("#m1").text("responsive web");
+});
+</script>
+</head>
+<body>
+
+<div id="m1">jQuery</div>
+<div class="m2">html</div>
+<div class="m2">css</div>
+<div class="m2">javascript</div>
+
+</body>
+</html>

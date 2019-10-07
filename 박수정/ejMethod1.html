@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+var result = "";
+$(document).ready(function() {
+	
+	$("li").each(function(index, t) {
+		result += index + " : " + $(this).text() + "<br>";
+	});
+	
+	$(".m1").html(result);
+});
+</script>
+</head>
+<body>
+<ul>
+	<li>foo</li>
+	<li>bar</li>
+</ul>
+<div class="m1"></div>
+</body>
+</html>

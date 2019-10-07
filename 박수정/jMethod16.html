@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+</style>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(document).ready(function() {
+		$("button").click(function() {
+			
+			$(".m1").attr({
+				'title' : 'daum',
+				'href' : 'https://www.daum.net'
+			});
+			$(".m1").text("daum");
+			
+			/* $(".m2").attr('href',function() {
+				return $(this).attr('href')+"/jsp";
+			}); */
+			$(".m2").attr('href',function(i, originValue) {
+				return originValue + "/jsp";
+			});
+			
+			$(".m3").attr('href',"https://www.kbstar.com");
+			$(".m3").attr('title', "kbstar");
+			$(".m3").text("국민은행");
+		});
+		
+		console.log($(".check").attr('checked'));
+		console.log($(".check").prop('checked'));
+	});
+});
+</script>
+</head>
+<body>
+	<h3><a class="m1" href="https://naver.com" title="naver">naver.com</a></h3>
+	<h3><a class="m2" href="https://tutorialspoint.com">tutorialspoint.com</a></h3>
+	<h3><a class="m3" href="https://google.com" title="google">google.com</a></h3>
+	<button>href와 title 변경</button>
+	
+	<input class="check" type="checkbox" checked="checked"/>
+</body>
+</html>

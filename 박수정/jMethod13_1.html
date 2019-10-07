@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+.ab {
+	background-color:lightgray;
+}
+</style>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("button").click(function() {
+		$("h1").toggleClass("ab");
+	});
+});
+</script>
+</head>
+<body>
+<button>Click</button>
+<h1>Toggle Class</h1>
+</body>
+</html>

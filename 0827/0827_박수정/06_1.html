@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	//문자열방식
+	$(".m1").css("background","black");
+	$(".m1").css("color","white");
+	$(".m1").css("font-style","italic");
+	
+	// 메소드방식
+	$(".m2").css("color",function() {
+		return "purple";
+	});
+	
+	$(".m2").css("background",function() {
+		return "lightgray";
+	});
+	
+	$(".m2").css("font-size", function () {
+		return "30px";
+	});
+	
+	//객체방식
+	$("p").css({
+		"border": "2px solid blue",
+		"text-align": "center", 
+		"color": "green"
+	});
+	
+	//함수방식
+	$("h2").css({
+		"background":function() {
+			return "black";
+		},
+		"color":function() {
+			return "red";
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div class="m1">jQuery</div>
+<div class="m2">javascript</div>
+
+<p><strong>jQuery mobile</strong></p>
+<h2>responsive Web</h2>
+</body>
+</html>

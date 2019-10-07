@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	var city = ["서울","대구","대전","부산"];
+	var newCity = $.each(city, function(value, index) {
+		if(index < 2) {
+			return value;
+		}
+	});
+	console.log(newCity.toString());
+});
+
+/* each는 map처럼 return이 되지 않는다. 새로운 배열 다시 만들 수 없다. index랑 value 위치도 다름 */
+</script>
+</head>
+<body>
+
+</body>
+</html>

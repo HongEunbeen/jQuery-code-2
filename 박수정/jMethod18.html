@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	.first{color:red;}
+	.second{color:pink;}
+	.third{color:orange;}
+</style>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	var color = $('h1').css('color'); //css(), attr(), html() 모두 첫번째 요소만 리턴
+	alert(color);
+});
+</script>
+</head>
+<body>
+
+<h1 class="first">Header-0</h1>
+<h1 class="second">Header-1</h1>
+<h1 class="thrid">Header-2</h1>
+
+</body>
+</html>

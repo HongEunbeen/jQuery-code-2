@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("li").css("margin","10px");
+	$(".li1").css("border","2px solid red");
+	$(".li2").css("border","1px solid orange");
+	$(".li4").css("background","yellow");
+	$(".li5").css("border","2px solid purple");
+	$(".li6").css("background","purple");
+	
+	$("button").click(function() {
+		$(".li6").css("background","gray");
+	});
+});
+</script>
+<style>
+
+</style>
+</head>
+<body>
+<ul>
+	<li class="li1">내용_1</li>
+	<li class="li2">내용_2</li>
+	<li class="li2">내용_3</li>
+	<li class="li4">내용_1</li>
+	<li class="li5">내용_2</li>
+	<li class="li6">내용_3</li>
+</ul>
+
+<button>클릭</button>
+</body>
+</html>

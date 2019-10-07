@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	var city = ["서울","대구","대전","부산"];
+	var newCity = $.map(city, function(value, index) {
+		if(index < 2) {
+			return value;
+		}
+	});
+	console.log(newCity.toString());
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

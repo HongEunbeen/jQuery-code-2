@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+p {
+	margin:8px; font-size:16px;
+}
+.selected{
+	color:red; font-weight:bold;
+}
+
+.highlight{
+	background:yellow;
+}
+</style>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("button").click(function() {
+		//토글 클래스가 있으면 하고 없으면 지우자
+		// 걍 따로따로 한거랑 연결한거랑 비슷함.
+		$("p").toggleClass("selected").toggleClass("highlight");
+		
+		//hasClass() if문에 사용
+	});
+});
+</script>
+</head>
+<body>
+<p>안녕하세요<p>
+<p class="highlight">반갑습니다.<p>
+<p class="highlight">안녕히계세요</p>
+<button>클래스 삭제</button>
+</body>
+</html>

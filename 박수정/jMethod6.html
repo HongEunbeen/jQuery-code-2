@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	
+	var city=["서울","대구","대전","부산"];
+	$.each(city, function(index,value) {
+		console.log(index);
+		console.log(value);
+		
+		var output = '';
+		output += 'index : ' + index;
+	    output += ', value : ' + value + '<br>';
+
+        document.body.innerHTML += output;
+
+	});
+
+	document.body.innerHTML += '<p>';
+	
+	var subjectInfo = {
+		subject: "html",
+		grade: 1,
+		days: 20
+	};
+	$.each(subjectInfo, function(key, value) {
+		console.log(key + ':' + value );
+		
+		var output = '';
+		output += 'key : ' + key;
+	    output += ', value : ' + value + '<br>';
+
+        document.body.innerHTML += output;
+	});
+	
+});
+	
+</script>
+</head>
+<body>
+</body>
+</html>
